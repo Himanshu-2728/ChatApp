@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/loginPage.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="welcomeBox">
+            Welcome To MeChat
+        </div>
+
+        <div class="loginForm">
+            <form id="form" >
+                <div id="textArea">
+
+                    <input name="usernameBox" type="text" placeholder="Username">
+                    <input name="passwordBox" type="text" placeholder="Password">
+                </div>
+                <div id="button">
+                    <input type="submit" name="submitButton" id="submit" value="Login" onclick="onSubmit()" >
+
+                </div>
+            </form>
+        </div>
+
+        <div class="others">
+            <a href="./createAccount.html">Create New Account</a>
+        </div>
+
+    </div>
+    <script src="./js/loginPage.js"></script>
+</body>
+</html>

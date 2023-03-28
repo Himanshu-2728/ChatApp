@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+body{
+    background-color: rgb(147, 147, 236);
+}
+
+.mainContainer {
+    border: 1px solid blue;
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    width: 30vw;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcomeBox {
+    height: 15vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'PT Serif';
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#textArea {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+#textArea input {
+    height: 3vh;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+#button {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    border: 1px solid blue;
+    width: 95%;
+    margin: auto;
+    background-color: blue;
+}
+
+
+.others {
+    border: 2px solid black;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
