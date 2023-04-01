@@ -5,6 +5,7 @@ body{
 }
 
 .mainContainer {
+    background-color: rgb(230, 230, 243);
     border: 1px solid blue;
     position: relative;
     margin: auto;
@@ -66,10 +67,15 @@ body{
 
 
 .others {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.others button {
+    background-color:  rgb(147, 147, 236);
+    height: 5vh;
 }

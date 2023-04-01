@@ -33,6 +33,8 @@ function onSubmit(){
             form.elements[1].placeholder = "Password incorrect"
         }else if(resp.userExist && resp.passwordCorrect === true){
             console.log('Username and password is correct')
+            window.location.replace('/home')
+            window.localStorage.setItem('logged-in' , true)
         }
     })
 }

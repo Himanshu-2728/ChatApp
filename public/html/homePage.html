@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/homePage.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div id="users" class="users">
+            <img class="imgs" src="https://th.bing.com/th/id/R.bae2d37c4317140a408aef6671346186?rik=X1vYbxH6nQxCcA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_218090.png&ehk=poXsiWmpbb3%2b%2bK%2blj8H9AQprCYsoz4kt%2bU4rFFKbOCo%3d&risl=&pid=ImgRaw&r=0" alt="users">
+
+            <h1>Users</h1>
+        </div>
+        <div id="chat" class="chat">
+            <img class="imgs" src="https://cdn.onlinewebfonts.com/svg/img_397748.png" alt="chat">
+            <h1>Chat</h1>
+        </div>
+
+        <div id="logout" class="logout">
+            <img class="imgs" src="https://static.vecteezy.com/system/resources/previews/000/574/782/original/vector-logout-sign-icon.jpg" alt="logout image">
+
+            <h1>Logout</h1>
+        </div>
+
+    </div>
+    <script>
+        let loggedIn = window.localStorage.getItem('logged-in')
+        
+
+            
+        if(!loggedIn){
+            window.location.href = "http://localhost:3000"
+        }
+
+        let users = document.getElementById('users')
+        let chat = document.getElementById('chat')
+        let logoutButton = document.getElementById('logout')
+        users.onclick = () => {
+            window.location.href = 'http://localhost:3000/users'
+        }
+        chat.onclick = () => {
+            window.location.replace('/chat')
+        }
+
+        logoutButton.onclick = () => {
+            window.localStorage.setItem('logged-in' , false)
+            window.location.href = "http://localhost:3000"
+        }
+
+    </script>
+</body>
+</html>

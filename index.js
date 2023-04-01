@@ -27,4 +27,9 @@ app.get('/createAccount' , (req , res) => {
     res.sendFile(path.join(__dirname , 'public' , 'html' , 'createAccount.html'))
 })
 
+app.get('/home' , (req , res) => {
+    res.sendFile(path.join(__dirname , 'public' , 'html' , 'homePage.html'))
+})
+
+
 server.listen(3000)
