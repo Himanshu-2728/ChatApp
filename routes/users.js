@@ -44,4 +44,8 @@ router.post('/create' , (req , res) => {
 
 })
 
+router.get('/get' , (req , res) => {
+    res.json({"users": usernames})
+})
+
 module.exports = router

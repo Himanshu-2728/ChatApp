@@ -31,5 +31,8 @@ app.get('/home' , (req , res) => {
     res.sendFile(path.join(__dirname , 'public' , 'html' , 'homePage.html'))
 })
 
+app.get('/users' , (req , res) => {
+    res.sendFile(path.join(__dirname , 'public' , 'html' , 'users.html'))
+})
 
 server.listen(3000)
