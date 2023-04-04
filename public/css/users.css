@@ -50,13 +50,22 @@ hr {
 
 .userdiv {
     cursor: pointer;
-    margin: 10px;
+    margin-top: 10px;
+    margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 20px;    
 }
 
 #displayArea {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+.friend {
+    background-color: aqua;
+    margin: auto;
+    width: 40%;
 }

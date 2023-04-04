@@ -4,6 +4,9 @@ function onSubmit(){
     const form = document.getElementById('form')
     const username = form.elements[0].value
     const password = form.elements[1].value
+    if(username === '' || password === ''){
+        return
+    }
     
     const data = {
         method: 'POST',
@@ -32,6 +35,8 @@ function onSubmit(){
             form.elements[1].value = ""
             form.elements[1].placeholder = "Password incorrect"
         }else if(resp.userExist && resp.passwordCorrect === true){
+            window.localStorage.setItem('username' , username)
+            window.localStorage.setItem('pasword' , password)
             console.log('Username and password is correct')
             window.location.replace('/home')
             window.localStorage.setItem('logged-in' , true)
