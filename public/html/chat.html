@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="left">
+            <h1>Users</h1>
+            <div id='userlist' class="userList">
+            </div>
+        </div>
+        <div class="right">
+            <div class="topNav">
+                <div class="username">
+
+                </div>
+            </div>
+            <div class="chatArea"></div>
+        </div>
+    </div>
+    <script src="../js/chat.js"></script>
+</body>
+</html>

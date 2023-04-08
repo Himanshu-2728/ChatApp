@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(65, 63, 63);
+}
+
+.mainContainer {
+    background-color: black;
+    height: 85vh;
+    display: flex;
+    width: 70vw;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.left{
+    background-color: blue;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userList {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 50%;
+    /* border: 2px solid black; */
+}
+
+.user {
+    cursor: pointer;
+    /* border: 1px solid black; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin: 10px 0px 0px 0px;
+}
+
+.username {
+    border: 2px solid black;
+    height: 80%;
+    width: 30%;
+    margin-left: 20px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: yellow;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topNav {
+    background-color:  pink;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.chatArea {
+    background-color:  purple;
+    height: 92%;
+}
+
+.chatDisplayArea {
+    border: 2px solid peru;
+    height: 95%;
+}
+
+.form {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}

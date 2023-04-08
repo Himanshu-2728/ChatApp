@@ -77,10 +77,9 @@ router.post('/friend' , async(req , res) => {
         await selfUser[0].save()
         console.log(selfUser)
 
-    }else {
+    }else if(!req.body.add){
         friends.splice(friends.indexOf(friendUser[0]) , 1)
         await users.updateOne({username: selfUser[0].username} , {$set: {friendList: friends}})
-        await selfUser[0].save()
         console.log(selfUser[0])
     }
 })
